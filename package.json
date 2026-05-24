@@ -1,0 +1,43 @@
+{
+  "name": "cinevault",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "seed": "node scripts/seed.mjs",
+    "agent:dev": "cd scraper-agent && uvicorn main:app --reload --host 127.0.0.1 --port 8000"
+  },
+  "dependencies": {
+    "@auth/mongodb-adapter": "latest",
+    "@radix-ui/react-slot": "latest",
+    "bcryptjs": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "lucide-react": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest",
+    "next": "^15.0.0",
+    "next-auth": "beta",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "latest",
+    "@tailwindcss/postcss": "latest",
+    "@types/bcryptjs": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "^15.0.0",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "^5.0.0"
+  }
+}
